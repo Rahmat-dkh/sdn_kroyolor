@@ -11,7 +11,7 @@ class PesertaDidikController extends Controller
 {
     public function index()
     {
-        $siswas = PesertaDidik::orderBy('nama')->paginate(15);
+        $siswas = PesertaDidik::orderBy('judul')->paginate(15);
         return view('admin.siswa.index', compact('siswas'));
     }
 
@@ -23,8 +23,8 @@ class PesertaDidikController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required',
-            'kelas' => 'required',
+            'judul' => 'required',
+            'deskripsi' => 'nullable',
             'foto' => 'image|mimes:jpeg,png,jpg|max:2048'
         ]);
 
@@ -46,8 +46,8 @@ class PesertaDidikController extends Controller
     public function update(Request $request, PesertaDidik $pesertaDidik)
     {
         $request->validate([
-            'nama' => 'required',
-            'kelas' => 'required',
+            'judul' => 'required',
+            'deskripsi' => 'nullable',
             'foto' => 'image|mimes:jpeg,png,jpg|max:2048'
         ]);
 

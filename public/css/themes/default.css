@@ -1,0 +1,12 @@
+/* public/css/themes/default.css */
+:root {
+    --bs-primary: #198754;
+    --bs-primary-rgb: 25, 135, 84;
+    --accent-color: #28a745;
+}
+.navbar { background-color: #ffffff !important; }
+.btn-primary, .btn-cta { background-color: #198754 !important; border-color: #198754 !important; color: #fff !important; }
+.text-primary { color: #198754 !important; }
+.footer { background-color: #198754 !important; color: #fff !important; padding: 40px 0; }
+.footer a { color: #fff !important; text-decoration: none; opacity: 0.8; }
+.footer a:hover { opacity: 1; }

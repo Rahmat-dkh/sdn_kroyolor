@@ -14,28 +14,27 @@
                     <div class="me-3 text-primary"><i class="bi bi-geo-alt-fill fs-4"></i></div>
                     <div>
                         <strong>Alamat:</strong><br>
-                        Jl. Kroyo No. 123, Kabupaten/Kota, Provinsi
+                        Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Kab. Purworejo, Jawa Tengah
                     </div>
                 </div>
                 <div class="d-flex mb-3">
                     <div class="me-3 text-primary"><i class="bi bi-envelope-fill fs-4"></i></div>
                     <div>
                         <strong>Email:</strong><br>
-                        info@sdnkroyolor.sch.id
+                        sdnkroyolor@gmail.com
                     </div>
                 </div>
                 <div class="d-flex mb-3">
                     <div class="me-3 text-primary"><i class="bi bi-telephone-fill fs-4"></i></div>
                     <div>
                         <strong>Telepon:</strong><br>
-                        (021) 1234567
+                        (0275) 1234567
                     </div>
                 </div>
                 
                 <div class="mt-4">
                     <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
-                        <!-- Placeholder Google Maps -->
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126748.56347862248!2d107.5731164!3d-6.9034443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6398252477f%3A0x1460771707ef72aa!2sBandung%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://www.google.com/maps?q=SD+Negeri+Kroyolor+Kemiri+Purworejo&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>

@@ -19,16 +19,7 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Sidebar -->
-        <nav class="col-md-2 d-none d-md-block sidebar px-0">
-            <div class="p-4">
-                <h5 class="fw-bold">Admin Panel</h5>
-                <hr>
-            </div>
-            <a href="/admin/dashboard"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a>
-            <a href="{{ route('berita.index') }}"><i class="bi bi-newspaper me-2"></i> Berita</a>
-            <a href="{{ route('staff.index') }}"><i class="bi bi-people me-2"></i> Guru & Staff</a>
-            <a href="{{ route('peserta-didik.index') }}" class="active"><i class="bi bi-person-badge me-2"></i> Peserta Didik</a>
-        </nav>
+        @include('admin.partials.sidebar')
 
         <!-- Main Content -->
         <main class="col-md-10 main-content">
@@ -42,19 +33,12 @@
                     <form action="{{ route('peserta-didik.store') }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label class="form-label">Nama Lengkap</label>
-                            <input type="text" name="nama" class="form-control" placeholder="Nama lengkap siswa" required>
+                            <label class="form-label">Judul Dokumentasi</label>
+                            <input type="text" name="judul" class="form-control" placeholder="Judul dokumentasi/foto peserta didik" required>
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Kelas</label>
-                            <select name="kelas" class="form-select" required>
-                                <option value="I">I (Satu)</option>
-                                <option value="II">II (Dua)</option>
-                                <option value="III">III (Tiga)</option>
-                                <option value="IV">IV (Empat)</option>
-                                <option value="V">V (Lima)</option>
-                                <option value="VI">VI (Enam)</option>
-                            </select>
+                            <label class="form-label">Deskripsi</label>
+                            <textarea name="deskripsi" class="form-control" rows="4" placeholder="Keterangan dokumentasi kegiatan"></textarea>
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Foto</label>

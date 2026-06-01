@@ -1,61 +1,181 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<div class="top-bar d-none d-lg-block py-1 text-white" style="background-color: #00251f !important;">
     <div class="container">
-        <a class="navbar-brand fw-bold text-primary fs-3" href="{{ url('/') }}">
-            <i class="bi bi-mortarboard-fill me-2"></i>SDN KROYOLOR
-        </a>
-        <button class="navbar-toggler border-0 shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger-icon">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="d-flex justify-content-between small fw-medium">
+            <div>
+                <span class="me-4"><i class="bi bi-telephone-fill me-2 text-success"></i> (0275) 1234567</span>
+                <span><i class="bi bi-envelope-fill me-2 text-success"></i> sdnkroyolor@gmail.com</span>
             </div>
-        </button>
+            <div>
+                <span><i class="bi bi-geo-alt-fill me-2 text-success"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm py-2 transition-all" id="mainNavbar">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
+            <div class="brand-logo-circle me-3" style="background-color: var(--bs-primary) !important; color: #fff !important;">
+                <i class="bi bi-mortarboard-fill"></i>
+            </div>
+            <div class="brand-text">
+                <span class="d-block fw-bold fs-4 text-primary line-height-1">SD NEGERI KROYOLOR</span>
+                <span class="d-block small text-muted opacity-75 fw-medium">NPSN: 20306457</span>
+            </div>
+        </a>
+
+        <div class="d-lg-none">
+            <button class="navbar-toggler border-0 shadow-none p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-1 text-dark"></i>
+            </button>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+            <ul class="navbar-nav ms-auto align-items-lg-center align-items-start w-100-mobile mt-lg-0 mt-2">
+                <li class="nav-item w-100-mobile">
                     <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" href="{{ url('/') }}">Home</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {{ Request::is('profil*') ? 'active' : '' }}" href="#" id="navbarDropdownProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Profil <i class="bi bi-chevron-down ms-1 small"></i>
+                <li class="nav-item dropdown custom-dropdown w-100-mobile">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center {{ Request::is('profil*') ? 'active' : '' }}" href="#" id="dropProfil" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Profil <i class="bi bi-chevron-down ms-1 icon-chevron"></i>
                     </a>
-                    <ul class="dropdown-menu border-0 shadow-lg mt-0" aria-labelledby="navbarDropdownProfil">
-                        <li><a class="dropdown-item" href="{{ url('/profil/identitas') }}"><i class="bi bi-building me-2"></i>Identitas Sekolah</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/profil/sejarah') }}"><i class="bi bi-hourglass-split me-2"></i>Sejarah</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/profil/akreditasi') }}"><i class="bi bi-patch-check me-2"></i>Akreditasi</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/profil/sarana-prasarana') }}"><i class="bi bi-display me-2"></i>Sarana Prasarana</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 animate slideIn" aria-labelledby="dropProfil">
+                        <li><a class="dropdown-item" href="{{ url('/profil/identitas') }}">Identitas Sekolah</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/profil/sejarah') }}">Sejarah</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/profil/akreditasi') }}">Akreditasi</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/profil/sarana-prasarana') }}">Sarana Prasarana</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item w-100-mobile">
                     <a class="nav-link {{ Request::is('berita*') ? 'active' : '' }}" href="{{ url('/berita') }}">Berita</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {{ Request::is('direktori*') ? 'active' : '' }}" href="#" id="navbarDropdownDirektori" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Direktori <i class="bi bi-chevron-down ms-1 small"></i>
+                <li class="nav-item dropdown custom-dropdown w-100-mobile">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center {{ Request::is('direktori*') ? 'active' : '' }}" href="#" id="dropDir" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Direktori <i class="bi bi-chevron-down ms-1 icon-chevron"></i>
                     </a>
-                    <ul class="dropdown-menu border-0 shadow-lg mt-0" aria-labelledby="navbarDropdownDirektori">
-                        <li><a class="dropdown-item" href="{{ url('/direktori/guru-tendik') }}"><i class="bi bi-person-badge me-2"></i>Guru & Tendik</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/direktori/peserta-didik') }}"><i class="bi bi-people me-2"></i>Peserta Didik</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 animate slideIn" aria-labelledby="dropDir">
+                        <li><a class="dropdown-item" href="{{ url('/direktori/guru-tendik') }}">Guru & Staff</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/direktori/peserta-didik') }}">Peserta Didik</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {{ Request::is('galeri*') ? 'active' : '' }}" href="#" id="navbarDropdownGaleri" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Galeri <i class="bi bi-chevron-down ms-1 small"></i>
+                <li class="nav-item dropdown custom-dropdown w-100-mobile">
+                    <a class="nav-link dropdown-toggle d-flex justify-content-between align-items-center {{ Request::is('galeri*') ? 'active' : '' }}" href="#" id="dropGal" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Galeri <i class="bi bi-chevron-down ms-1 icon-chevron"></i>
                     </a>
-                    <ul class="dropdown-menu border-0 shadow-lg mt-0" aria-labelledby="navbarDropdownGaleri">
-                        <li><a class="dropdown-item" href="{{ url('/galeri/foto') }}"><i class="bi bi-images me-2"></i>Galeri Foto</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/galeri/video') }}"><i class="bi bi-play-btn me-2"></i>Galeri Video</a></li>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 animate slideIn" aria-labelledby="dropGal">
+                        <li><a class="dropdown-item" href="{{ url('/galeri/foto') }}">Galeri Foto</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/galeri/video') }}">Galeri Video</a></li>
                     </ul>
                 </li>
-                <li class="nav-item ms-lg-2 btn-cta-wrapper">
-                    <a href="{{ url('/kontak') }}" class="btn btn-cta rounded-pill px-4 py-2 mt-1 fw-bold">Kontak Kami</a>
+                <li class="nav-item ms-lg-3 w-100-mobile mt-3 mt-lg-0">
+                    <a href="{{ url('/kontak') }}" class="btn btn-cta rounded-3 px-4 py-2 fw-bold shadow-sm w-100-mobile">Kontak Kami</a>
                 </li>
                 @auth
-                <li class="nav-item ms-lg-2">
-                    <a href="{{ route('admin.dashboard') }}" class="btn btn-dark rounded-3 px-4 py-2 mt-1 fw-bold">Admin Panel</a>
+                <li class="nav-item ms-lg-2 w-100-mobile mt-2 mt-lg-0">
+                    <a href="{{ route('admin.dashboard') }}" class="btn btn-dark btn-sm rounded-3 px-3 py-2 w-100-mobile">Admin</a>
                 </li>
                 @endauth
             </ul>
         </div>
     </div>
 </nav>
+
+<style>
+    .transition-all { transition: all 0.3s ease-in-out; }
+    .brand-logo-circle {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .line-height-1 { line-height: 1.1; }
+    
+    .nav-link {
+        font-weight: 600;
+        color: #444 !important;
+        padding: 0.5rem 1rem !important;
+        transition: all 0.3s;
+    }
+    .nav-link.active {
+        color: var(--bs-primary) !important;
+    }
+    
+    /* Remove default Bootstrap triangle (caret) */
+    .dropdown-toggle::after {
+        display: none !important;
+    }
+    
+    /* Hover and Arrow Rotation Logic */
+    @media (min-width: 992px) {
+        .custom-dropdown:hover > .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+        .custom-dropdown:hover .icon-chevron {
+            transform: rotate(180deg);
+        }
+    }
+    
+    /* Always show chevron on mobile when open */
+    .custom-dropdown.show .icon-chevron {
+        transform: rotate(180deg);
+    }
+
+    .icon-chevron {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    /* Dropdown Styles */
+    .dropdown-menu {
+        border-radius: 12px;
+        padding: 10px;
+        margin-top: 0;
+    }
+    .dropdown-item {
+        padding: 0.7rem 1rem;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.2s;
+    }
+    .dropdown-item:hover {
+        background-color: var(--bs-primary);
+        color: #fff;
+    }
+
+    .animate { animation-duration: 0.3s; animation-fill-mode: both; }
+    @keyframes slideIn {
+        from { transform: translateY(10px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+    .slideIn { animation-name: slideIn; }
+
+    @media (max-width: 991.98px) {
+        .navbar-collapse {
+            background: #fff;
+            padding: 1rem 0;
+            margin-top: 0.5rem;
+            border-top: 1px solid #eee;
+        }
+        .nav-link {
+            padding: 1rem 1.5rem !important;
+            border-bottom: 1px solid #f8f8f8;
+            font-size: 1.1rem;
+            width: 100%;
+            text-align: left;
+        }
+        .dropdown-menu {
+            background-color: #fcfcfc !important;
+            padding-left: 1.5rem;
+            border-radius: 0;
+            box-shadow: none !important;
+            border: none;
+            width: 100%;
+        }
+        .w-100-mobile { width: 100% !important; }
+    }
+</style>

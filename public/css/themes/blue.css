@@ -1,0 +1,10 @@
+/* public/css/themes/blue.css */
+:root {
+    --bs-primary: #0d6efd;
+    --bs-primary-rgb: 13, 110, 253;
+}
+.navbar { background-color: #ffffff !important; }
+.btn-primary, .btn-cta { background-color: #0d6efd !important; border-color: #0d6efd !important; color: #fff !important; }
+.text-primary { color: #0d6efd !important; }
+.footer { background-color: #0d6efd !important; color: #fff !important; padding: 40px 0; }
+.footer a { color: #fff !important; text-decoration: none; opacity: 0.8; }

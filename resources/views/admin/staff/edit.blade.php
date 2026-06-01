@@ -19,15 +19,7 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Sidebar -->
-        <nav class="col-md-2 d-none d-md-block sidebar px-0">
-            <div class="p-4">
-                <h5 class="fw-bold">Admin Panel</h5>
-                <hr>
-            </div>
-            <a href="/admin/dashboard"><i class="bi bi-speedometer2 me-2"></i> Dashboard</a>
-            <a href="{{ route('berita.index') }}"><i class="bi bi-newspaper me-2"></i> Berita</a>
-            <a href="{{ route('staff.index') }}" class="active"><i class="bi bi-people me-2"></i> Guru & Staff</a>
-        </nav>
+        @include('admin.partials.sidebar')
 
         <!-- Main Content -->
         <main class="col-md-10 main-content">

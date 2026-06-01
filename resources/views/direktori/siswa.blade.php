@@ -13,8 +13,8 @@
                         <tr>
                             <th>No</th>
                             <th>Foto</th>
-                            <th>Nama Lengkap</th>
-                            <th>Kelas</th>
+                            <th>Judul Kegiatan</th>
+                            <th>Deskripsi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -23,13 +23,13 @@
                             <td>{{ $siswas->firstItem() + $index }}</td>
                             <td>
                                 @if($item->foto)
-                                    <img src="{{ asset('storage/'.$item->foto) }}" class="rounded-circle shadow-sm" style="width: 40px; height: 40px; object-fit: cover;" alt="{{ $item->nama }}">
+                                    <img src="{{ asset('storage/'.$item->foto) }}" class="rounded shadow-sm" style="width: 80px; height: 60px; object-fit: cover;" alt="{{ $item->judul }}">
                                 @else
-                                    <i class="bi bi-person-circle fs-3 text-muted"></i>
+                                    <i class="bi bi-image fs-3 text-muted"></i>
                                 @endif
                             </td>
-                            <td class="fw-bold">{{ $item->nama }}</td>
-                            <td>Kelas {{ $item->kelas }}</td>
+                            <td class="fw-bold">{{ $item->judul }}</td>
+                            <td>{{ Str::limit($item->deskripsi, 100) }}</td>
                         </tr>
                         @empty
                         <tr>

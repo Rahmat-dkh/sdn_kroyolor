@@ -3,16 +3,24 @@
 @section('title', 'Home')
 
 @section('content')
+    <!-- Alert Pengumuman -->
+    <div class="bg-warning text-dark py-2 text-center fw-bold shadow-sm position-relative z-index-3" style="font-size: 0.95rem;">
+        <i class="bi bi-megaphone-fill me-2"></i> Pendaftaran Peserta Didik Baru (PPDB) SD Negeri Kroyolor Telah Dibuka! <a href="{{ url('/kontak') }}" class="text-dark text-decoration-underline ms-2">Daftar Sekarang</a>
+    </div>
+
     <!-- Hero Section -->
-    <section class="hero-section text-center text-md-start">
+    <section class="hero-section text-center text-md-start d-flex align-items-center">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-7">
-                    <h1 class="display-3 fw-bold mb-4">Membangun Masa Depan <span class="text-accent underline">Cemerlang</span> Bersama Kami</h1>
-                    <p class="lead mb-4 opacity-90">SDN Kroyolor berdedikasi untuk menciptakan lingkungan belajar yang inspiratif, religius, dan berprestasi untuk generasi penerus bangsa.</p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#sambutan" class="btn btn-primary btn-lg shadow">Kenali Kami Lebih Dekat</a>
-                        <a href="/profil/identitas" class="btn btn-outline-light btn-lg">Profil Sekolah</a>
+            <div class="row">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <h1 class="hero-title display-1 fw-800 mb-3 text-white">Membangun <br>Masa Depan.</h1>
+                        <div class="hero-line mb-4"></div>
+                        <p class="hero-subtitle lead mb-5 text-white fs-4 opacity-75">SD Negeri Kroyolor: Unggul, Berkarakter, Berprestasi.</p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#sambutan" class="btn btn-primary btn-lg rounded-0 px-5 py-3 fw-bold shadow-lg">Jelajahi Sekarang</a>
+                            <a href="/profil/identitas" class="btn btn-outline-light btn-lg rounded-0 px-5 py-3 fw-bold">Profil Sekolah</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -63,10 +71,37 @@
         </div>
     </section>
 
+    <!-- Statistik Counter Fakta -->
+    <section class="py-4 text-white" style="background-color: #a31c1e;">
+        <div class="container py-3">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold m-0 tracking-wider">Fakta SD Negeri Kroyolor</h3>
+            </div>
+            <div class="row text-center justify-content-center align-items-center">
+                <div class="col-6 col-md-3 mb-4 mb-md-0 d-flex justify-content-center align-items-baseline gap-2">
+                    <span class="display-3 fw-bold counter-value m-0" data-target="9">0</span>
+                    <span class="fs-6">Guru</span>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0 d-flex justify-content-center align-items-baseline gap-2">
+                    <span class="display-3 fw-bold counter-value m-0" data-target="142">0</span>
+                    <span class="fs-6">Siswa</span>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0 d-flex justify-content-center align-items-baseline gap-2">
+                    <span class="display-3 fw-bold counter-value m-0" data-target="50">0</span><span class="display-3 fw-bold m-0">+</span>
+                    <span class="fs-6">Prestasi</span>
+                </div>
+                <div class="col-6 col-md-3 d-flex justify-content-center align-items-baseline gap-2">
+                    <span class="display-3 fw-bold counter-value m-0" data-target="15">0</span>
+                    <span class="fs-6">Fasilitas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sambutan Kepala Sekolah -->
     <section id="sambutan" class="py-5 bg-white overlap-section">
         <div class="container">
-            <div class="card border-0 shadow-lg p-4 p-md-5 mt-n5 position-relative z-index-2 rounded-3xl" style="margin-top: -80px;">
+            <div class="card border-0 shadow-lg p-4 p-md-5 mt-4 position-relative z-index-2 rounded-3xl">
                 <div class="row align-items-center">
                     <div class="col-md-3 text-center mb-4 mb-md-0">
                         <div class="avatar-lg mx-auto bg-primary-soft rounded-circle p-2" style="width: 150px; height: 150px;">
@@ -75,9 +110,17 @@
                     </div>
                     <div class="col-md-9">
                         <h2 class="fw-bold mb-3">Sambutan Kepala Sekolah</h2>
-                        <p class="fs-5 text-muted fst-italic mb-3">"Selamat datang di website resmi SDN Kroyolor. Kami berkomitmen untuk memberikan pendidikan terbaik bagi putra-putri Anda, menggabungkan kurikulum akademis yang kuat dengan pembinaan karakter yang berlandaskan nilai-nilai luhur."</p>
-                        <h5 class="fw-bold mb-0">H. Budi Santoso, S.Pd., M.M.</h5>
-                        <p class="text-primary small fw-bold">Kepala Sekolah SDN Kroyolor</p>
+                        <p class="fs-6 text-muted fst-italic mb-4" style="line-height: 1.8; text-align: justify;">
+                            "Assalamu'alaikum Warahmatullahi Wabarakatuh. Selamat datang di website resmi SD Negeri Kroyolor. Puji syukur senantiasa kita panjatkan kehadirat Tuhan Yang Maha Esa atas segala limpahan rahmat-Nya. Kami hadir dengan komitmen teguh untuk mewujudkan generasi yang beriman, bertaqwa, dan memiliki budi pekerti yang santun dalam bertutur maupun berperilaku. Sebagai institusi pendidikan dasar, kami menyadari bahwa pondasi karakter anak bangsa dibentuk di sini. 
+                            <br><br>
+                            Oleh karena itu, kami tidak hanya mengedepankan pencapaian akademik yang berorientasi pada kemajuan ilmu pengetahuan (IPTEK), namun juga sangat mempedulikan pengembangan potensi non-akademik siswa. Melalui pelestarian kesenian lokal, khususnya keunggulan di bidang seni Karawitan serta olahraga, kami membekali siswa untuk tetap berpijak pada akar budaya bangsa seraya menumbuhkan rasa cinta tanah air. Di era keterbukaan informasi ini, hadirnya website profil sekolah menjadi wujud nyata dari dedikasi kami untuk memberikan transparansi dan kemudahan akses informasi bagi seluruh wali murid dan masyarakat luas. Mari bersama-sama bersinergi mendidik putra-putri kita menjadi generasi mandiri, peduli lingkungan, dan siap menyongsong masa depan gemilang. Wassalamu'alaikum Warahmatullahi Wabarakatuh."
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                            <div class="me-3">
+                                <h5 class="fw-bold mb-1 text-dark">Imbuh Tri Purwani S.Pd.SD</h5>
+                                <p class="text-primary small fw-bold mb-0 text-uppercase tracking-wider">Kepala Sekolah SD Negeri Kroyolor</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -201,19 +244,38 @@
                     <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=400&auto=format&fit=crop" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover" alt="Gallery 4">
                 </div>
             </div>
-            
-            <div class="bg-primary p-5 rounded-4 shadow-lg text-white mt-5 text-center">
-                <h2 class="fw-bold mb-3">Siap Bergabung dengan SDN Kroyolor?</h2>
-                <p class="fs-5 mb-4 opacity-75">Daftarkan putra-putri Anda sekarang dan jadilah bagian dari komunitas kami.</p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="{{ url('/kontak') }}" class="btn btn-warning btn-lg fw-bold px-5">Kontak Kami</a>
-                    <a href="{{ url('/profil/identitas') }}" class="btn btn-outline-light btn-lg px-5">Lihat Profil</a>
-                </div>
-            </div>
         </div>
     </section>
 
+
     <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
+                        url('{{ asset('images/hero.png') }}');
+            background-size: cover;
+            background-position: center;
+            min-height: 90vh;
+            position: relative;
+        }
+        .fw-800 { font-weight: 800; }
+        .hero-title {
+            letter-spacing: -2px;
+            line-height: 0.9;
+            text-transform: uppercase;
+            font-family: 'Outfit', sans-serif;
+            text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .hero-line {
+            width: 80px;
+            height: 6px;
+            background-color: var(--bs-primary);
+        }
+        .tracking-widest { letter-spacing: 0.3em; }
+        .hero-subtitle {
+            font-family: 'Inter', sans-serif;
+            max-width: 600px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
         .overlap-section {
             z-index: 10;
         }
@@ -251,4 +313,41 @@
             color: var(--accent-color);
         }
     </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const counters = document.querySelectorAll('.counter-value');
+            const speed = 200; 
+
+            const animateCounters = () => {
+                counters.forEach(counter => {
+                    const updateCount = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const count = +counter.innerText;
+                        const inc = target / speed;
+
+                        if (count < target) {
+                            counter.innerText = Math.ceil(count + inc);
+                            setTimeout(updateCount, 15);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCount();
+                });
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            const statsSection = document.querySelector('.counter-value')?.closest('section');
+            if(statsSection) observer.observe(statsSection);
+        });
+    </script>
 @endsection

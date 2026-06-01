@@ -1,96 +1,47 @@
-<footer class="footer pt-5 pb-4 bg-primary text-white">
+<footer class="footer py-5 mt-auto" style="background-color: #00251f !important; color: #fff !important;">
     <div class="container">
-        <div class="row g-4 justify-content-between">
-            <!-- School Brand -->
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="footer-logo-circle me-3" style="width: 40px; height: 40px; background: var(--bs-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-mortarboard-fill text-white"></i>
+                    </div>
+                    <h4 class="fw-bold mb-0">SD NEGERI KROYOLOR</h4>
+                </div>
+                <p class="text-white-50 small mb-4">Mewujudkan lingkungan pendidikan yang inovatif, berkarakter, dan berprestasi unggul di era digital. (NPSN: 20306457)</p>
+                <div class="social-links d-flex gap-2">
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold mb-3">Navigasi</h6>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-2"><a href="{{ url('/') }}" class="text-white text-decoration-none">Beranda</a></li>
+                    <li class="mb-2"><a href="{{ url('/profil/identitas') }}" class="text-white text-decoration-none">Profil</a></li>
+                    <li class="mb-2"><a href="{{ url('/berita') }}" class="text-white text-decoration-none">Berita</a></li>
+                    <li class="mb-2"><a href="{{ url('/kontak') }}" class="text-white text-decoration-none">Kontak</a></li>
+                </ul>
+            </div>
             <div class="col-lg-3 col-md-6">
-                <div class="footer-brand mb-3">
-                    <a class="d-flex align-items-center text-decoration-none" href="{{ url('/') }}">
-                        <div class="brand-icon-wrapper me-3">
-                            <i class="bi bi-mortarboard-fill text-white fs-4"></i>
-                        </div>
-                        <div>
-                            <h4 class="fw-bold text-white mb-0">SDN KROYOLOR</h4>
-                            <p class="text-white-50 small mb-0">Mewujudkan Generasi Unggul & Berkarakter</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="social-links d-flex gap-3">
-                    <a href="#" class="social-icon" title="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-icon" title="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-icon" title="YouTube"><i class="bi bi-youtube"></i></a>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-lg-2 col-md-6">
-                <h6 class="fw-bold text-white mb-3 mt-2">Navigasi Cepat</h6>
-                <ul class="list-unstyled footer-links text-white-50">
-                    <li><a href="{{ url('/') }}" class="text-white-50">Beranda</a></li>
-                    <li><a href="{{ url('/profil/identitas') }}" class="text-white-50">Profil Sekolah</a></li>
-                    <li><a href="{{ url('/berita') }}" class="text-white-50">Berita Terbaru</a></li>
-                    <li><a href="{{ url('/galeri/foto') }}" class="text-white-50">Galeri Kegiatan</a></li>
-                    <li><a href="{{ url('/kontak') }}" class="text-white-50">Hubungi Kami</a></li>
+                <h6 class="fw-bold mb-3">Kontak Kami</h6>
+                <ul class="list-unstyled small opacity-75">
+                    <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-success"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</li>
+                    <li class="mb-2"><i class="bi bi-telephone-fill me-2 text-success"></i> (0275) 1234567</li>
+                    <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-success"></i> sdnkroyolor@gmail.com</li>
                 </ul>
             </div>
-
-            <!-- Information -->
-            <div class="col-lg-2 col-md-6">
-                <h6 class="fw-bold text-white mb-3 mt-2">Pranala Luar</h6>
-                <ul class="list-unstyled footer-links">
-                    <li><a href="https://pusdatin.kemdikbud.go.id/" target="_blank" class="text-white-50">Kemdikbud</a></li>
-                    <li><a href="https://dapo.kemdikbud.go.id/" target="_blank" class="text-white-50">Dapodik</a></li>
-                    <li><a href="https://belajar.kemdikbud.go.id/" target="_blank" class="text-white-50">Rumah Belajar</a></li>
-                    <li><a href="#" class="text-white-50">Portal Sekolah</a></li>
-                </ul>
-            </div>
-
-            <!-- Contact Info -->
-            <div class="col-lg-5 col-md-6">
-                <h6 class="fw-bold text-white mb-3 mt-2">Kontak Kami</h6>
-                <div class="row g-3">
-                    <div class="col-md-12">
-                        <div class="d-flex mb-2">
-                            <div class="contact-icon me-2 bg-white-10">
-                                <i class="bi bi-geo-alt-fill text-white"></i>
-                            </div>
-                            <div>
-                                <p class="mb-0 text-white fw-medium small">Jl. Kroyolor No. 123, Kec. Kemranjen, Kab. Banyumas, Jawa Tengah</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex mb-2">
-                            <div class="contact-icon me-2 bg-white-10">
-                                <i class="bi bi-telephone-fill text-white"></i>
-                            </div>
-                            <div>
-                                <p class="mb-0 text-white fw-medium small">(021) 1234 5678</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="d-flex mb-2">
-                            <div class="contact-icon me-2 bg-white-10">
-                                <i class="bi bi-envelope-fill text-white"></i>
-                            </div>
-                            <div>
-                                <p class="mb-0 text-white fw-medium small text-break">info@sdnkroyolor.sch.id</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-lg-3 col-md-6 text-lg-end">
+                <h6 class="fw-bold mb-3">Lokasi Kami</h6>
+                <div class="rounded overflow-hidden shadow-sm ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps?q=SD+Negeri+Kroyolor+Kemiri+Purworejo&output=embed" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
         </div>
-
-        <hr class="my-3 opacity-10">
-
-        <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                <p class="mb-0 text-white-50 small">&copy; {{ date('Y') }} <span class="text-white fw-semibold">SDN Kroyolor</span>. Hak Cipta Dilindungi Undang-Undang.</p>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <p class="mb-0 text-white-50 small italic">Dikelola oleh Tim IT SDN Kroyolor</p>
-            </div>
+        <hr class="my-4 opacity-10">
+        <div class="text-center small opacity-50">
+            <p class="mb-0">&copy; {{ date('Y') }} SDN Kroyolor. Hak Cipta Dilindungi.</p>
         </div>
     </div>
 </footer>

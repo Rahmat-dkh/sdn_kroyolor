@@ -4,7 +4,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\BeritaController;
-use App\Http\Controllers\Admin\StaffController;
+use App\Http\Controllers\Admin\ThemeController;
 use App\Http\Controllers\Admin\PesertaDidikController;
 use App\Http\Controllers\Admin\GaleriController;
 use App\Http\Controllers\Admin\KontakController;
@@ -54,4 +54,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     // Kontak Management
     Route::get('kontak', [KontakController::class, 'index'])->name('admin.kontak.index');
     Route::delete('kontak/{kontak}', [KontakController::class, 'destroy'])->name('admin.kontak.destroy');
+    // Theme Management
+    Route::get('theme', [ThemeController::class, 'index'])->name('admin.theme.index');
+    Route::post('theme', [ThemeController::class, 'update'])->name('admin.theme.update');
 });

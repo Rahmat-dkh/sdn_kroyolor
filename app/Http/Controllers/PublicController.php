@@ -50,7 +50,7 @@ class PublicController extends Controller
 
     public function direktoriSiswa() 
     { 
-        $siswas = PesertaDidik::orderBy('nama')->paginate(20);
+        $siswas = PesertaDidik::orderBy('judul')->paginate(20);
         return view('direktori.siswa', compact('siswas')); 
     }
 

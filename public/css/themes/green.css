@@ -1,0 +1,10 @@
+/* public/css/themes/green.css */
+:root {
+    --bs-primary: #198754;
+    --bs-primary-rgb: 25, 135, 84;
+}
+.navbar { background-color: #ffffff !important; }
+.btn-primary, .btn-cta { background-color: #198754 !important; border-color: #198754 !important; color: #fff !important; }
+.text-primary { color: #198754 !important; }
+.footer { background-color: #198754 !important; color: #fff !important; padding: 40px 0; }
+.footer a { color: #fff !important; text-decoration: none; opacity: 0.8; }
