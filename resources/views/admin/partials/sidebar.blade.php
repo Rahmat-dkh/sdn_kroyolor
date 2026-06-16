@@ -24,6 +24,10 @@
             <i class="bi bi-images"></i>
             <span class="link-text">Galeri</span>
         </a>
+        <a href="{{ route('sarana.index') }}" class="sidebar-link {{ Request::is('admin/sarana*') ? 'active' : '' }}">
+            <i class="bi bi-building"></i>
+            <span class="link-text">Sarana Prasarana</span>
+        </a>
         <a href="{{ route('admin.kontak.index') }}" class="sidebar-link {{ Request::is('admin/kontak*') ? 'active' : '' }}">
             <i class="bi bi-envelope"></i>
             <span class="link-text">Pesan Kontak</span>

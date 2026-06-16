@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card card-stat bg-success p-4 shadow-sm">
+                <div class="card card-stat bg-info p-4 shadow-sm">
                     <i class="bi bi-people fs-1 mb-2"></i>
                     <h3>{{ $countStaff }}</h3>
                     <p class="mb-0">Guru & Staff</p>

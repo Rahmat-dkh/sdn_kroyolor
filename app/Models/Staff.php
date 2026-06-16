@@ -8,4 +8,8 @@ class Staff extends Model
 {
     protected $table = 'staff';
     protected $fillable = ['nama', 'jabatan', 'kategori', 'foto'];
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

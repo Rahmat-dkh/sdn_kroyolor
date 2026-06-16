@@ -6,6 +6,8 @@
 }
 .navbar { background-color: #ffffff !important; }
 .btn-primary, .btn-cta { background-color: #198754 !important; border-color: #198754 !important; color: #fff !important; }
+.btn-outline-primary { color: #198754 !important; border-color: #198754 !important; }
+.btn-outline-primary:hover { background-color: #198754 !important; color: #fff !important; }
 .text-primary { color: #198754 !important; }
 .footer { background-color: #198754 !important; color: #fff !important; padding: 40px 0; }
 .footer a { color: #fff !important; text-decoration: none; opacity: 0.8; }

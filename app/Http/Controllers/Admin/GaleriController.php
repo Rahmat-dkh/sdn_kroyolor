@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Galeri;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Cache;
 
 class GaleriController extends Controller
 {
@@ -38,6 +39,7 @@ class GaleriController extends Controller
         }
 
         Galeri::create($data);
+        Cache::forget('home_galeri');
         return redirect()->route('galeri.index')->with('success', 'Item galeri berhasil ditambahkan');
     }
 
@@ -61,6 +63,7 @@ class GaleriController extends Controller
         }
 
         $galeri->update($data);
+        Cache::forget('home_galeri');
 
         return redirect()->route('galeri.index')->with('success', 'Item galeri berhasil diperbarui');
     }
@@ -69,6 +72,7 @@ class GaleriController extends Controller
     {
         if ($galeri->file && $galeri->jenis == 'foto') Storage::disk('public')->delete($galeri->file);
         $galeri->delete();
+        Cache::forget('home_galeri');
 
         return redirect()->route('galeri.index')->with('success', 'Item galeri berhasil dihapus');
     }

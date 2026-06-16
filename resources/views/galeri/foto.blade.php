@@ -7,7 +7,7 @@
     <h1 class="mb-4">Galeri Foto</h1>
     <div class="row g-3">
         @forelse($fotos as $item)
-        <div class="col-6 col-md-3">
+        <div class="col-12 col-sm-6 col-md-3">
             <div class="card border-0 shadow-sm h-100 overflow-hidden galeri-card">
                 <a href="{{ asset('storage/'.$item->file) }}" target="_blank">
                     <img src="{{ asset('storage/'.$item->file) }}" class="img-fluid" alt="{{ $item->judul }}" style="height: 200px; width: 100%; object-fit: cover;" loading="lazy">

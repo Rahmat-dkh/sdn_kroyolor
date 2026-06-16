@@ -8,6 +8,8 @@ use App\Http\Controllers\Admin\ThemeController;
 use App\Http\Controllers\Admin\PesertaDidikController;
 use App\Http\Controllers\Admin\GaleriController;
 use App\Http\Controllers\Admin\KontakController;
+use App\Http\Controllers\Admin\StaffController;
+use App\Http\Controllers\Admin\SaranaPrasaranaController;
 use Illuminate\Support\Facades\Route;
 
 // Public Routes
@@ -46,10 +48,11 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     
     // Resource Management
-    Route::resource('berita', BeritaController::class);
+    Route::resource('berita', BeritaController::class)->parameters(['berita' => 'berita']);
     Route::resource('staff', StaffController::class);
     Route::resource('peserta-didik', PesertaDidikController::class);
     Route::resource('galeri', GaleriController::class);
+    Route::resource('sarana', SaranaPrasaranaController::class)->parameters(['sarana' => 'sarana']);
     
     // Kontak Management
     Route::get('kontak', [KontakController::class, 'index'])->name('admin.kontak.index');

@@ -3,23 +3,19 @@
 @section('title', 'Home')
 
 @section('content')
-    <!-- Alert Pengumuman -->
-    <div class="bg-warning text-dark py-2 text-center fw-bold shadow-sm position-relative z-index-3" style="font-size: 0.95rem;">
-        <i class="bi bi-megaphone-fill me-2"></i> Pendaftaran Peserta Didik Baru (PPDB) SD Negeri Kroyolor Telah Dibuka! <a href="{{ url('/kontak') }}" class="text-dark text-decoration-underline ms-2">Daftar Sekarang</a>
-    </div>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center text-md-start d-flex align-items-center">
-        <div class="container">
+    <section class="hero-section text-start d-flex align-items-center">
+        <div class="container px-4 px-md-3">
             <div class="row">
-                <div class="col-lg-10">
+                <div class="col-lg-10 px-3 px-md-0">
                     <div class="hero-content">
-                        <h1 class="hero-title display-1 fw-800 mb-3 text-white">Membangun <br>Masa Depan.</h1>
+                        <h1 class="hero-title fw-800 mb-3 text-white">Membangun <br>Masa Depan.</h1>
                         <div class="hero-line mb-4"></div>
-                        <p class="hero-subtitle lead mb-5 text-white fs-4 opacity-75">SD Negeri Kroyolor: Unggul, Berkarakter, Berprestasi.</p>
-                        <div class="d-flex flex-wrap gap-3">
-                            <a href="#sambutan" class="btn btn-primary btn-lg rounded-0 px-5 py-3 fw-bold shadow-lg">Jelajahi Sekarang</a>
-                            <a href="/profil/identitas" class="btn btn-outline-light btn-lg rounded-0 px-5 py-3 fw-bold">Profil Sekolah</a>
+                        <p class="hero-subtitle mb-4 mb-md-5 text-white opacity-75 fs-6 fs-md-5">SD Negeri Kroyolor: Unggul, Berkarakter, Berprestasi.</p>
+                        <div class="d-grid d-md-flex gap-3">
+                            <a href="#sambutan" class="btn btn-primary rounded-0 px-4 px-md-5 py-2 py-md-3 fw-bold shadow-lg">Jelajahi Sekarang</a>
+                            <a href="/profil/identitas" class="btn btn-outline-light rounded-0 px-4 px-md-5 py-2 py-md-3 fw-bold">Profil Sekolah</a>
                         </div>
                     </div>
                 </div>
@@ -36,63 +32,46 @@
                 <p class="lead text-muted mx-auto small" style="max-width: 700px;">Mempersiapkan siswa untuk memberikan kontribusi yang berarti pada masyarakat, bangsa dan dunia melalui pendidikan berkualitas.</p>
             </div>
 
-            <div class="row g-4 justify-content-center text-center">
+            <div class="row g-3 g-md-4 justify-content-center text-center">
                 <!-- Col 1: Mengapa -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="info-card-alt">
-                        <div class="info-icon-large mx-auto mb-4">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="info-card-alt h-100 p-3 p-md-4">
+                        <div class="info-icon-large mx-auto mb-3 mb-md-4">
                             <i class="bi bi-question-circle"></i>
                         </div>
-                        <h4 class="fw-bold mb-3 text-primary">Mengapa SDN Kroyolor</h4>
-                        <p class="text-muted small px-3">SDN Kroyolor menjadi Sekolah Dasar terbaik yang telah terakreditasi Unggul dan berkomitmen mencetak generasi berprestasi.</p>
+                        <h5 class="fw-bold mb-2 mb-md-3 text-primary">Mengapa Kami</h5>
+                        <p class="text-muted small px-1 px-md-3 d-none d-sm-block">Sekolah terakreditasi Unggul yang berkomitmen mencetak generasi berprestasi.</p>
                     </div>
                 </div>
                 <!-- Col 2: Tentang -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="info-card-alt">
-                        <div class="info-icon-large mx-auto mb-4">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="info-card-alt h-100 p-3 p-md-4">
+                        <div class="info-icon-large mx-auto mb-3 mb-md-4">
                             <i class="bi bi-building"></i>
                         </div>
-                        <h4 class="fw-bold mb-3 text-primary">Tentang Sekolah</h4>
-                        <p class="text-muted small px-3">Terdapat program unggulan dan kurikulum merdeka yang didukung oleh tenaga pendidik profesional dan fasilitas lengkap.</p>
+                        <h5 class="fw-bold mb-2 mb-md-3 text-primary">Tentang Sekolah</h5>
+                        <p class="text-muted small px-1 px-md-3 d-none d-sm-block">Program unggulan dengan tenaga pendidik profesional dan fasilitas lengkap.</p>
                     </div>
                 </div>
                 <!-- Col 3: Belajar -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="info-card-alt">
-                        <div class="info-icon-large mx-auto mb-4">
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="info-card-alt h-100 p-3 p-md-4">
+                        <div class="info-icon-large mx-auto mb-3 mb-md-4">
                             <i class="bi bi-mortarboard"></i>
                         </div>
-                        <h4 class="fw-bold mb-3 text-primary">Belajar di Kroyolor</h4>
-                        <p class="text-muted small px-3">SDN Kroyolor memiliki layanan sistem akademik berbasis digital yang telah terintegrasi untuk mendukung pembelajaran modern.</p>
+                        <h5 class="fw-bold mb-2 mb-md-3 text-primary">Belajar Modern</h5>
+                        <p class="text-muted small px-1 px-md-3 d-none d-sm-block">Layanan akademik berbasis digital terintegrasi untuk mendukung pembelajaran.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Statistik Counter Fakta -->
-    <section class="py-4 text-white" style="background-color: #a31c1e;">
-        <div class="container py-3">
-            <div class="text-center mb-4">
-                <h3 class="fw-bold m-0 tracking-wider">Fakta SD Negeri Kroyolor</h3>
-            </div>
-            <div class="row text-center justify-content-center align-items-center">
-                <div class="col-6 col-md-3 mb-4 mb-md-0 d-flex justify-content-center align-items-baseline gap-2">
-                    <span class="display-3 fw-bold counter-value m-0" data-target="9">0</span>
-                    <span class="fs-6">Guru</span>
-                </div>
-                <div class="col-6 col-md-3 mb-4 mb-md-0 d-flex justify-content-center align-items-baseline gap-2">
-                    <span class="display-3 fw-bold counter-value m-0" data-target="142">0</span>
-                    <span class="fs-6">Siswa</span>
-                </div>
-                <div class="col-6 col-md-3 mb-4 mb-md-0 d-flex justify-content-center align-items-baseline gap-2">
-                    <span class="display-3 fw-bold counter-value m-0" data-target="50">0</span><span class="display-3 fw-bold m-0">+</span>
-                    <span class="fs-6">Prestasi</span>
-                </div>
-                <div class="col-6 col-md-3 d-flex justify-content-center align-items-baseline gap-2">
-                    <span class="display-3 fw-bold counter-value m-0" data-target="15">0</span>
-                    <span class="fs-6">Fasilitas</span>
+                <!-- Col 4: Ekstrakurikuler -->
+                <div class="col-6 col-lg-3 col-md-6">
+                    <div class="info-card-alt h-100 p-3 p-md-4">
+                        <div class="info-icon-large mx-auto mb-3 mb-md-4">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h5 class="fw-bold mb-2 mb-md-3 text-primary">Ekstrakurikuler</h5>
+                        <p class="text-muted small px-1 px-md-3 d-none d-sm-block">Beragam kegiatan untuk mengembangkan minat dan bakat siswa di luar akademik.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,18 +84,16 @@
                 <div class="row align-items-center">
                     <div class="col-md-3 text-center mb-4 mb-md-0">
                         <div class="avatar-lg mx-auto bg-primary-soft rounded-circle p-2" style="width: 150px; height: 150px;">
-                            <img src="https://img.freepik.com/premium-vector/avatar-icon-vector-illustration-person-concept-profile-user-symbol_1013341-218.jpg" class="img-fluid rounded-circle shadow-sm" alt="Kepala Sekolah">
+                            <img src="{{ asset('images/kepala-sekolah.jpg') }}" class="img-fluid rounded-circle shadow-sm" alt="Kepala Sekolah" style="object-fit: cover; width: 100%; height: 100%;">
                         </div>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-9 text-start mt-4 mt-md-0">
                         <h2 class="fw-bold mb-3">Sambutan Kepala Sekolah</h2>
-                        <p class="fs-6 text-muted fst-italic mb-4" style="line-height: 1.8; text-align: justify;">
-                            "Assalamu'alaikum Warahmatullahi Wabarakatuh. Selamat datang di website resmi SD Negeri Kroyolor. Puji syukur senantiasa kita panjatkan kehadirat Tuhan Yang Maha Esa atas segala limpahan rahmat-Nya. Kami hadir dengan komitmen teguh untuk mewujudkan generasi yang beriman, bertaqwa, dan memiliki budi pekerti yang santun dalam bertutur maupun berperilaku. Sebagai institusi pendidikan dasar, kami menyadari bahwa pondasi karakter anak bangsa dibentuk di sini. 
-                            <br><br>
-                            Oleh karena itu, kami tidak hanya mengedepankan pencapaian akademik yang berorientasi pada kemajuan ilmu pengetahuan (IPTEK), namun juga sangat mempedulikan pengembangan potensi non-akademik siswa. Melalui pelestarian kesenian lokal, khususnya keunggulan di bidang seni Karawitan serta olahraga, kami membekali siswa untuk tetap berpijak pada akar budaya bangsa seraya menumbuhkan rasa cinta tanah air. Di era keterbukaan informasi ini, hadirnya website profil sekolah menjadi wujud nyata dari dedikasi kami untuk memberikan transparansi dan kemudahan akses informasi bagi seluruh wali murid dan masyarakat luas. Mari bersama-sama bersinergi mendidik putra-putri kita menjadi generasi mandiri, peduli lingkungan, dan siap menyongsong masa depan gemilang. Wassalamu'alaikum Warahmatullahi Wabarakatuh."
+                        <p class="fs-6 text-muted fst-italic mb-4" style="line-height: 1.8; max-width: 800px;">
+                            "Assalamu'alaikum Warahmatullahi Wabarakatuh. Selamat datang di website resmi SD Negeri Kroyolor. Kami hadir dengan komitmen teguh untuk mewujudkan generasi yang beriman, bertaqwa, dan memiliki budi pekerti yang santun. Sebagai institusi pendidikan dasar, kami menyadari bahwa pondasi karakter anak bangsa dibentuk di sini. Mari bersama-sama bersinergi mendidik putra-putri kita menjadi generasi mandiri, peduli lingkungan, dan siap menyongsong masa depan gemilang."
                         </p>
-                        <div class="d-flex align-items-center mt-4">
-                            <div class="me-3">
+                        <div class="d-flex align-items-center justify-content-start mt-4 gap-3">
+                            <div class="text-start">
                                 <h5 class="fw-bold mb-1 text-dark">Imbuh Tri Purwani S.Pd.SD</h5>
                                 <p class="text-primary small fw-bold mb-0 text-uppercase tracking-wider">Kepala Sekolah SD Negeri Kroyolor</p>
                             </div>
@@ -127,15 +104,42 @@
         </div>
     </section>
 
+    <!-- Statistik Counter Fakta -->
+    <section class="py-4 text-white bg-primary">
+        <div class="container py-3">
+            <div class="text-center mb-4">
+                <h3 class="fw-bold m-0 tracking-wider">Fakta SD Negeri Kroyolor</h3>
+            </div>
+            <div class="row text-center justify-content-center align-items-center g-4">
+                <div class="col-6 col-md-3 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-baseline gap-1 gap-md-2">
+                    <span class="stat-value fw-bold counter-value m-0" data-target="9">0</span>
+                    <span class="fs-6 text-white-50">Guru</span>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-baseline gap-1 gap-md-2">
+                    <span class="stat-value fw-bold counter-value m-0" data-target="142">0</span>
+                    <span class="fs-6 text-white-50">Siswa</span>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-baseline gap-1 gap-md-2">
+                    <div class="d-flex align-items-baseline"><span class="stat-value fw-bold counter-value m-0" data-target="50">0</span><span class="stat-value fw-bold m-0">+</span></div>
+                    <span class="fs-6 text-white-50">Prestasi</span>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column flex-md-row justify-content-center align-items-center align-items-md-baseline gap-1 gap-md-2">
+                    <span class="stat-value fw-bold counter-value m-0" data-target="15">0</span>
+                    <span class="fs-6 text-white-50">Fasilitas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Berita Terbaru -->
     <section class="py-5 mt-4">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-end mb-5">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end mb-4 mb-md-5 gap-3">
                 <div>
                     <h5 class="text-primary fw-bold text-uppercase tracking-wider small mb-2">Update Terkini</h5>
-                    <h2 class="display-6 fw-bold mb-0">Berita & Kegiatan</h2>
+                    <h2 class="section-title fw-bold mb-0">Berita & Kegiatan</h2>
                 </div>
-                <a href="/berita" class="btn btn-link text-decoration-none fw-bold">Lihat Semua Berita <i class="bi bi-arrow-right ms-1"></i></a>
+                <a href="/berita" class="btn btn-outline-primary rounded-pill px-4 py-2 btn-sm fw-bold">Lihat Semua <i class="bi bi-arrow-right ms-1"></i></a>
             </div>
             
             <div class="row g-4">
@@ -157,7 +161,7 @@
                         <div class="card-body p-4">
                             <h5 class="card-title fw-bold mb-3">{{ Str::limit($item->judul, 60) }}</h5>
                             <p class="card-text text-muted mb-4">{{ Str::limit(strip_tags($item->isi), 100) }}</p>
-                            <a href="{{ url('/berita/'.$item->slug) }}" class="btn btn-outline-primary btn-sm rounded-pill px-4">Baca Selengkapnya</a>
+                            <a href="{{ url('/berita/'.$item->slug) }}" class="btn btn-primary btn-sm rounded-pill px-4">Baca Selengkapnya</a>
                         </div>
                     </div>
                 </div>
@@ -173,76 +177,32 @@
         </div>
     </section>
 
-    <!-- Fasilitas & Keunggulan -->
-    <section class="py-5 bg-light overflow-hidden">
-        <div class="container py-4">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <h5 class="text-primary fw-bold text-uppercase tracking-wider small mb-2">Mengapa Memilih Kami?</h5>
-                    <h2 class="display-6 fw-bold mb-4">Keunggulan & Fasilitas SDN Kroyolor</h2>
-                    <p class="text-muted fs-5 mb-5">Kami menyediakan berbagai fasilitas modern dan program unggulan untuk menunjang potensi setiap siswa.</p>
-                    
-                    <div class="d-flex gap-4 mb-4">
-                        <div class="flex-shrink-0 bg-white shadow-sm rounded-4 p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                            <i class="bi bi-laptop text-primary fs-3"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Laboratorium Komputer</h5>
-                            <p class="text-muted small">Menunjang literasi digital siswa sejak dini dengan perangkat modern.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex gap-4 mb-4">
-                        <div class="flex-shrink-0 bg-white shadow-sm rounded-4 p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                            <i class="bi bi-book text-success fs-3"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Perpustakaan Digital</h5>
-                            <p class="text-muted small">Koleksi buku lengkap yang membantu menumbuhkan minat baca siswa.</p>
-                        </div>
-                    </div>
-
-                    <div class="d-flex gap-4">
-                        <div class="flex-shrink-0 bg-white shadow-sm rounded-4 p-3 d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-                            <i class="bi bi-trophy text-warning fs-3"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Ekstrakurikuler Juara</h5>
-                            <p class="text-muted small">Berbagai pilihan kegiatan untuk mengasah bakat non-akademik.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 position-relative">
-                    <div class="position-absolute bg-primary rounded-circle opacity-10" style="width: 400px; height: 400px; top: -50px; right: -50px; z-index: 1;"></div>
-                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1000&auto=format&fit=crop" class="img-fluid rounded-4 shadow-lg position-relative z-index-2" alt="Aktivitas Belajar">
-                    <div class="position-absolute bottom-0 start-0 bg-white p-4 shadow-lg rounded-4 m-4 z-index-3 d-none d-md-block border-start border-primary border-4">
-                        <div class="d-flex align-items-center gap-3">
-                            <h3 class="fw-bold text-primary mb-0">98%</h3>
-                            <p class="mb-0 text-muted small fw-bold">Kepuasan Orang Tua<br>Siswa SDN Kroyolor</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Galeri & CTA -->
-    <section class="py-5 text-center">
+    <section class="py-5 text-start">
         <div class="container py-4">
-            <h2 class="display-6 fw-bold mb-5">Lihat Aktivitas Kami</h2>
-            <div class="row g-3 mb-5">
-                <div class="col-6 col-md-3">
-                    <img src="https://images.unsplash.com/photo-1544391682-171892cd29d4?q=80&w=400&auto=format&fit=crop" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover" alt="Gallery 1">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end mb-4 mb-md-5 gap-3">
+                <div>
+                    <h5 class="text-primary fw-bold text-uppercase tracking-wider small mb-2">Galeri Foto</h5>
+                    <h2 class="section-title fw-bold mb-0">Lihat Aktivitas Kami</h2>
                 </div>
-                <div class="col-6 col-md-3">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=400&auto=format&fit=crop" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover" alt="Gallery 2">
+                <a href="/galeri/foto" class="btn btn-outline-primary rounded-pill px-4 py-2 btn-sm fw-bold">Lihat Semua <i class="bi bi-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row g-3 g-md-4 mb-5 text-center">
+                @forelse($galeri as $item)
+                <div class="col-12 col-sm-6 col-md-3">
+                    <a href="{{ asset('storage/'.$item->file) }}" target="_blank" class="gallery-card text-decoration-none d-block position-relative rounded-4 overflow-hidden shadow-sm h-100">
+                        <img src="{{ asset('storage/'.$item->file) }}" class="gallery-item img-fluid object-fit-cover w-100" style="height: 250px;" alt="{{ $item->judul }}">
+                        <div class="position-absolute bottom-0 start-0 w-100 p-3" style="background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);">
+                            <h6 class="text-white fw-bold mb-0 text-truncate" title="{{ $item->judul }}">{{ $item->judul }}</h6>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-6 col-md-3">
-                    <img src="https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?q=80&w=400&auto=format&fit=crop" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover" alt="Gallery 3">
+                @empty
+                <div class="col-12 text-center py-4">
+                    <p class="text-muted"><i class="bi bi-images me-2"></i>Belum ada aktivitas yang diunggah.</p>
                 </div>
-                <div class="col-6 col-md-3">
-                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=400&auto=format&fit=crop" class="img-fluid rounded-4 shadow-sm h-100 object-fit-cover" alt="Gallery 4">
-                </div>
+                @endforelse
             </div>
         </div>
     </section>
@@ -251,19 +211,44 @@
     <style>
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
-                        url('{{ asset('images/hero.png') }}');
+                        url('{{ asset('images/hero.jpg') }}');
             background-size: cover;
             background-position: center;
-            min-height: 90vh;
+            min-height: 55vh;
+            padding: 120px 0 80px 0;
             position: relative;
         }
         .fw-800 { font-weight: 800; }
         .hero-title {
-            letter-spacing: -2px;
-            line-height: 0.9;
+            font-size: 2.6rem;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
             text-transform: uppercase;
             font-family: 'Outfit', sans-serif;
             text-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .section-title {
+            font-size: 1.8rem;
+        }
+        .stat-value {
+            font-size: 2.2rem;
+            line-height: 1;
+        }
+        @media (min-width: 768px) {
+            .hero-section {
+                min-height: 90vh;
+                padding: 0;
+            }
+            .hero-title {
+                font-size: clamp(3rem, 5vw, 4.5rem);
+                line-height: 0.9;
+            }
+            .section-title {
+                font-size: clamp(2rem, 3vw, 2.5rem);
+            }
+            .stat-value {
+                font-size: clamp(2.5rem, 4vw, 3.5rem);
+            }
         }
         .hero-line {
             width: 80px;
@@ -311,6 +296,47 @@
         }
         .text-accent {
             color: var(--accent-color);
+        }
+        .gallery-item {
+            transition: transform 0.3s ease;
+        }
+        .gallery-card:hover .gallery-item {
+            transform: scale(1.05);
+        }
+        .info-card-alt {
+            transition: all 0.3s ease;
+            padding: 30px 20px;
+            border-radius: 1rem;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .info-card-alt:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .info-card-alt .info-icon-large {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(13, 110, 253, 0.1);
+            color: var(--bs-primary);
+            font-size: 2rem;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .info-card-alt:hover .info-icon-large {
+            transform: scale(1.15) rotate(10deg);
+            background: var(--bs-primary);
+            color: #fff;
+        }
+        @media (min-width: 768px) {
+            .info-card-alt .info-icon-large {
+                width: 80px;
+                height: 80px;
+                font-size: 2.5rem;
+            }
         }
     </style>
 

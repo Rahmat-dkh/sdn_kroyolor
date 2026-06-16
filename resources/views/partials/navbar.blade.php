@@ -1,25 +1,26 @@
-<div class="top-bar d-none d-lg-block py-1 text-white" style="background-color: #00251f !important;">
-    <div class="container">
-        <div class="d-flex justify-content-between small fw-medium">
-            <div>
-                <span class="me-4"><i class="bi bi-telephone-fill me-2 text-success"></i> (0275) 1234567</span>
-                <span><i class="bi bi-envelope-fill me-2 text-success"></i> sdnkroyolor@gmail.com</span>
-            </div>
-            <div>
-                <span><i class="bi bi-geo-alt-fill me-2 text-success"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</span>
+<header class="shadow-sm" style="z-index: 1030;">
+    <div class="top-bar d-none d-lg-block py-1 text-white" style="background-color: #00251f !important;">
+        <div class="container">
+            <div class="d-flex justify-content-between small fw-medium">
+                <div>
+                    <span class="me-4"><i class="bi bi-telephone-fill me-2 text-primary"></i> (0275) 1234567</span>
+                    <span><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnkroyolor@gmail.com</span>
+                </div>
+                <div>
+                    <span><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</span>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm py-2 transition-all" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg bg-white py-2 transition-all m-0" id="mainNavbar">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
             <div class="brand-logo-circle me-3" style="background-color: var(--bs-primary) !important; color: #fff !important;">
                 <i class="bi bi-mortarboard-fill"></i>
             </div>
             <div class="brand-text">
-                <span class="d-block fw-bold fs-4 text-primary line-height-1">SD NEGERI KROYOLOR</span>
+                <span class="d-block fw-bold fs-5 fs-md-4 text-primary line-height-1">SD NEGERI KROYOLOR</span>
                 <span class="d-block small text-muted opacity-75 fw-medium">NPSN: 20306457</span>
             </div>
         </a>
@@ -68,17 +69,18 @@
                     </ul>
                 </li>
                 <li class="nav-item ms-lg-3 w-100-mobile mt-3 mt-lg-0">
-                    <a href="{{ url('/kontak') }}" class="btn btn-cta rounded-3 px-4 py-2 fw-bold shadow-sm w-100-mobile">Kontak Kami</a>
+                    <a href="{{ url('/kontak') }}" class="btn btn-cta rounded-3 px-4 py-2 fw-bold shadow-sm w-100 text-center text-lg-start d-block">Kontak Kami</a>
                 </li>
                 @auth
                 <li class="nav-item ms-lg-2 w-100-mobile mt-2 mt-lg-0">
-                    <a href="{{ route('admin.dashboard') }}" class="btn btn-dark btn-sm rounded-3 px-3 py-2 w-100-mobile">Admin</a>
+                    <a href="{{ route('admin.dashboard') }}" class="btn btn-dark btn-sm rounded-3 px-3 py-2 w-100 text-center text-lg-start d-block">Admin</a>
                 </li>
                 @endauth
             </ul>
         </div>
     </div>
 </nav>
+</header>
 
 <style>
     .transition-all { transition: all 0.3s ease-in-out; }
@@ -175,7 +177,9 @@
             box-shadow: none !important;
             border: none;
             width: 100%;
-        }
         .w-100-mobile { width: 100% !important; }
+        .brand-text span.fs-5 {
+            font-size: 1.1rem !important;
+        }
     }
 </style>
