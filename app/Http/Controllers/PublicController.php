@@ -89,4 +89,11 @@ class PublicController extends Controller
         // Handle contact form submission
         return back()->with('success', 'Pesan Anda telah terkirim!');
     }
+
+    public function sitemap()
+    {
+        $beritas = Berita::latest()->get();
+        return response()->view('sitemap', compact('beritas'))
+                         ->header('Content-Type', 'text/xml');
+    }
 }

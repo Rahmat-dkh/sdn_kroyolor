@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Identitas Sekolah')
+@section('meta_description', 'Identitas resmi SD Negeri Kroyolor, NPSN 20306457, terletak di Kroyolor, Desa Kroyo Lor, Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah. Visi dan Misi Sekolah.')
+@section('og_title', 'Identitas Sekolah - SD Negeri Kroyolor')
 
 @section('content')
 <div class="container py-5">

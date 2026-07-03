@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('title', 'Berita')
+@section('meta_description', 'Berita dan informasi terbaru dari SD Negeri Kroyolor, Kemiri, Purworejo. Update kegiatan sekolah, prestasi siswa, dan pengumuman penting.')
+@section('og_title', 'Berita & Kegiatan - SD Negeri Kroyolor')
 
 @section('content')
 <div class="container py-5">

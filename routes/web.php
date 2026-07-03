@@ -13,6 +13,7 @@ use App\Http\Controllers\Admin\SaranaPrasaranaController;
 use Illuminate\Support\Facades\Route;
 
 // Public Routes
+Route::get('/sitemap.xml', [PublicController::class, 'sitemap']);
 Route::get('/', [PublicController::class, 'home'])->name('home');
 
 Route::prefix('profil')->group(function () {

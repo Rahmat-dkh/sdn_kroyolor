@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Detail Berita')
+@section('title', $berita->judul)
+@section('meta_description', Str::limit(strip_tags($berita->isi), 160))
+@section('og_title', $berita->judul . ' - SD Negeri Kroyolor')
+@section('og_image', $berita->gambar ? asset('storage/'.$berita->gambar) : asset('images/hero.jpg'))
 
 @section('content')
 <div class="container py-5">

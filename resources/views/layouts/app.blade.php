@@ -14,7 +14,52 @@
     <!-- Theme Specific CSS -->
     <link rel="stylesheet" href="{{ asset('css/themes/' . $activeTheme . '.css') }}">
     
-    <title>@yield('title', 'SDN Kroyolor')</title>
+    <title>@yield('title', 'SDN Kroyolor') | SD Negeri Kroyolor Kemiri Purworejo</title>
+
+    {{-- SEO Meta Tags --}}
+    <meta name="description" content="@yield('meta_description', 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah. NPSN: 20306457. Unggul, Berkarakter, Berprestasi.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'SDN Kroyolor, SD Negeri Kroyolor, Sekolah Dasar Kemiri, Purworejo, SD Kroyolor, NPSN 20306457, sekolah dasar purworejo, pendidikan dasar jawa tengah')">
+    <meta name="author" content="SD Negeri Kroyolor">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    {{-- Open Graph (Facebook, WhatsApp preview) --}}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SD Negeri Kroyolor">
+    <meta property="og:title" content="@yield('og_title', 'SD Negeri Kroyolor - Unggul, Berkarakter, Berprestasi')">
+    <meta property="og:description" content="@yield('meta_description', 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah.')">
+    <meta property="og:image" content="@yield('og_image', asset('images/hero.jpg'))">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:locale" content="id_ID">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('og_title', 'SD Negeri Kroyolor')">
+    <meta name="twitter:description" content="@yield('meta_description', 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kemiri, Purworejo.')">
+    <meta name="twitter:image" content="@yield('og_image', asset('images/hero.jpg'))">
+
+    {{-- Schema.org Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ElementarySchool",
+        "name": "SD Negeri Kroyolor",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('images/logo-sekolah.png') }}",
+        "image": "{{ asset('images/hero.jpg') }}",
+        "description": "Sekolah Dasar Negeri Kroyolor adalah sekolah unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kroyolor, Desa Kroyo Lor",
+            "addressLocality": "Kemiri",
+            "addressRegion": "Purworejo",
+            "addressCountry": "ID"
+        },
+        "telephone": "(0275) 1234567",
+        "email": "sdnegerikroyolor@yahoo.com"
+    }
+    </script>
+
     <style>
         html, body {
             overflow-x: hidden;
