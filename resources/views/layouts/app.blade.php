@@ -18,7 +18,7 @@
     <link rel="icon" href="{{ asset('images/logo-sekolah.png') }}" type="image/png">
     <link rel="apple-touch-icon" href="{{ asset('images/logo-sekolah.png') }}">
     
-    <title>@yield('title', 'SDN Kroyolor') | SD Negeri Kroyolor Kemiri Purworejo</title>
+    <title>@yield('title', 'SDN Kroyolor') - SD Negeri Kroyolor Kemiri Purworejo</title>
 
     {{-- SEO Meta Tags --}}
     @php
