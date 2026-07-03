@@ -4,8 +4,8 @@
 
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-4">
-    <h4 class="fw-bold">Kelola Peserta Didik</h4>
-    <a href="{{ route('peserta-didik.create') }}" class="btn btn-primary rounded-pill px-4"><i class="bi bi-plus-lg me-2"></i> Tambah Siswa</a>
+    <h4 class="fw-bold">Kelola Dokumentasi Siswa</h4>
+    <a href="{{ route('dokumentasi.create') }}" class="btn btn-primary rounded-pill px-4"><i class="bi bi-plus-lg me-2"></i> Tambah Siswa</a>
 </div>
 
 @if(session('success'))
@@ -28,9 +28,9 @@
                     </tr>
                 </thead>
                 <tbody class="border-top-0">
-                    @forelse($siswas as $index => $item)
+                    @forelse($dokumentasis as $index => $item)
                     <tr>
-                        <td class="px-4 text-muted">{{ $siswas->firstItem() + $index }}</td>
+                        <td class="px-4 text-muted">{{ $dokumentasis->firstItem() + $index }}</td>
                         <td>
                             @if($item->foto)
                                 <img src="{{ asset('storage/'.$item->foto) }}" class="rounded-3 shadow-sm" style="width: 40px; height: 40px; object-fit: cover;">
@@ -44,10 +44,10 @@
                         <td class="text-muted">{{ Str::limit($item->deskripsi, 50) }}</td>
                         <td class="text-end px-4">
                             <div class="d-flex justify-content-end gap-2">
-                                <a href="{{ route('peserta-didik.edit', $item->id) }}" class="btn btn-sm btn-light rounded-circle shadow-sm" title="Edit">
+                                <a href="{{ route('dokumentasi.edit', $item->id) }}" class="btn btn-sm btn-light rounded-circle shadow-sm" title="Edit">
                                     <i class="bi bi-pencil text-primary"></i>
                                 </a>
-                                <form action="{{ route('peserta-didik.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
+                                <form action="{{ route('dokumentasi.destroy', $item->id) }}" method="POST" onsubmit="return confirm('Yakin ingin menghapus data ini?')">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-sm btn-light rounded-circle shadow-sm" title="Hapus">
@@ -71,9 +71,9 @@
             </table>
         </div>
     </div>
-    @if($siswas->hasPages())
+    @if($dokumentasis->hasPages())
     <div class="card-footer bg-white border-0 px-4 py-3">
-        {{ $siswas->links() }}
+        {{ $dokumentasis->links() }}
     </div>
     @endif
 </div>

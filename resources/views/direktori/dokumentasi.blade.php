@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Peserta Didik')
+@section('title', 'Dokumentasi Siswa')
 
 @section('content')
 <div class="container py-5">
-    <h1 class="mb-4">Direktori Peserta Didik</h1>
+    <h1 class="mb-4">Dokumentasi Siswa</h1>
     <div class="card border-0 shadow-sm">
         <div class="card-body">
             <div class="table-responsive">
@@ -18,9 +18,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @forelse($siswas as $index => $item)
+                        @forelse($dokumentasis as $index => $item)
                         <tr>
-                            <td>{{ $siswas->firstItem() + $index }}</td>
+                            <td>{{ $dokumentasis->firstItem() + $index }}</td>
                             <td>
                                 @if($item->foto)
                                     <img src="{{ asset('storage/'.$item->foto) }}" class="rounded shadow-sm" style="width: 80px; height: 60px; object-fit: cover;" alt="{{ $item->judul }}">
@@ -41,7 +41,7 @@
             </div>
             
             <div class="mt-4 d-flex justify-content-center">
-                {{ $siswas->links() }}
+                {{ $dokumentasis->links() }}
             </div>
         </div>
     </div>

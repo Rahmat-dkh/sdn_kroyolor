@@ -5,7 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\BeritaController;
 use App\Http\Controllers\Admin\ThemeController;
-use App\Http\Controllers\Admin\PesertaDidikController;
+use App\Http\Controllers\Admin\DokumentasiController;
 use App\Http\Controllers\Admin\GaleriController;
 use App\Http\Controllers\Admin\KontakController;
 use App\Http\Controllers\Admin\StaffController;
@@ -27,7 +27,7 @@ Route::get('/berita/{slug}', [PublicController::class, 'beritaShow']);
 
 Route::prefix('direktori')->group(function () {
     Route::get('/guru-tendik', [PublicController::class, 'direktoriStaff']);
-    Route::get('/peserta-didik', [PublicController::class, 'direktoriSiswa']);
+    Route::get('/dokumentasi', [PublicController::class, 'direktoriSiswa']);
 });
 
 Route::prefix('galeri')->group(function () {
@@ -50,7 +50,7 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
     // Resource Management
     Route::resource('berita', BeritaController::class)->parameters(['berita' => 'berita']);
     Route::resource('staff', StaffController::class);
-    Route::resource('peserta-didik', PesertaDidikController::class);
+    Route::resource('dokumentasi', DokumentasiController::class);
     Route::resource('galeri', GaleriController::class);
     Route::resource('sarana', SaranaPrasaranaController::class)->parameters(['sarana' => 'sarana']);
     

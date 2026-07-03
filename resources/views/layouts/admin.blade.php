@@ -70,6 +70,34 @@
             cursor: pointer;
             color: #555;
         }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .admin-sidebar {
+                transform: translateX(-100%);
+                width: 260px;
+            }
+            .admin-sidebar.show-mobile {
+                transform: translateX(0);
+            }
+            .admin-topbar {
+                left: 0 !important;
+            }
+            .admin-main {
+                margin-left: 0 !important;
+                padding: 15px;
+            }
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background: rgba(0,0,0,0.5);
+                z-index: 999;
+            }
+            .sidebar-overlay.active {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body class="admin-theme-{{ $activeTheme }}">
@@ -108,10 +136,26 @@
         </div>
     </main>
 
+    <!-- Mobile Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebarOverlay');
+        
         document.getElementById('toggleSidebar').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.toggle('collapsed');
+            if (window.innerWidth <= 768) {
+                sidebar.classList.toggle('show-mobile');
+                overlay.classList.toggle('active');
+            } else {
+                sidebar.classList.toggle('collapsed');
+            }
+        });
+
+        overlay.addEventListener('click', function() {
+            sidebar.classList.remove('show-mobile');
+            overlay.classList.remove('active');
         });
     </script>
 </body>

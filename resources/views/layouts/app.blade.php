@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="{{ asset('css/themes/' . $activeTheme . '.css') }}">
     
     <title>@yield('title', 'SDN Kroyolor')</title>
+    <style>
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+    </style>
 </head>
 <body class="theme-{{ $activeTheme }}">
     @include('partials.navbar')

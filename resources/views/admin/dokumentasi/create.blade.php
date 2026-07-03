@@ -4,13 +4,13 @@
 
 @section('content')
 <div class="d-flex justify-content-between align-items-center mb-4">
-    <h4 class="fw-bold">Tambah Peserta Didik Baru</h4>
-    <a href="{{ route('peserta-didik.index') }}" class="btn btn-outline-secondary rounded-pill px-4"><i class="bi bi-arrow-left me-2"></i> Batal</a>
+    <h4 class="fw-bold">Tambah Dokumentasi Siswa Baru</h4>
+    <a href="{{ route('dokumentasi.index') }}" class="btn btn-outline-secondary rounded-pill px-4"><i class="bi bi-arrow-left me-2"></i> Batal</a>
 </div>
 
 <div class="card border-0 shadow-sm rounded-4">
     <div class="card-body p-4 p-md-5">
-        <form action="{{ route('peserta-didik.store') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('dokumentasi.store') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="mb-4">
                 <label class="form-label fw-bold">Judul Dokumentasi</label>

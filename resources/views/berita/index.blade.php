@@ -10,9 +10,9 @@
         <div class="col-md-4 mb-4">
             <div class="card h-100 border-0 shadow-sm">
                 @if($item->gambar)
-                    <img src="{{ asset('storage/'.$item->gambar) }}" class="card-img-top" alt="{{ $item->judul }}">
+                    <img src="{{ asset('storage/'.$item->gambar) }}" class="card-img-top" alt="{{ $item->judul }}" style="height: 250px; object-fit: cover;">
                 @else
-                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Placeholder">
+                    <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Placeholder" style="height: 250px; object-fit: cover;">
                 @endif
                 <div class="card-body">
                     <h5 class="card-title"><a href="{{ url('/berita/'.$item->slug) }}" class="text-decoration-none text-dark stretched-link">{{ $item->judul }}</a></h5>

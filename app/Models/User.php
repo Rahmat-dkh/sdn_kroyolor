@@ -63,9 +63,9 @@ class User extends Authenticatable
         return $this->hasMany(Staff::class);
     }
 
-    public function pesertaDidiks()
+    public function dokumentasis()
     {
-        return $this->hasMany(PesertaDidik::class);
+        return $this->hasMany(Dokumentasi::class);
     }
 
     public function saranaPrasaranas()

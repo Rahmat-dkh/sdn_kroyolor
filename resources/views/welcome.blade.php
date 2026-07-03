@@ -81,22 +81,20 @@
     <section id="sambutan" class="py-5 bg-white overlap-section">
         <div class="container">
             <div class="card border-0 shadow-lg p-4 p-md-5 mt-4 position-relative z-index-2 rounded-3xl">
-                <div class="row align-items-center">
-                    <div class="col-md-3 text-center mb-4 mb-md-0">
-                        <div class="avatar-lg mx-auto bg-primary-soft rounded-circle p-2" style="width: 150px; height: 150px;">
-                            <img src="{{ asset('images/kepala-sekolah.jpg') }}" class="img-fluid rounded-circle shadow-sm" alt="Kepala Sekolah" style="object-fit: cover; width: 100%; height: 100%;">
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <div class="mx-auto bg-primary-soft rounded-4 p-2" style="max-width: 220px;">
+                            <img src="{{ asset('images/kepala-sekolah.jpg') }}" class="img-fluid rounded-3 shadow-sm" alt="Kepala Sekolah" style="object-fit: cover; width: 100%; height: auto; aspect-ratio: 3/4;">
                         </div>
                     </div>
-                    <div class="col-md-9 text-start mt-4 mt-md-0">
-                        <h2 class="fw-bold mb-3">Sambutan Kepala Sekolah</h2>
-                        <p class="fs-6 text-muted fst-italic mb-4" style="line-height: 1.8; max-width: 800px;">
+                    <div class="col-md-9 mt-2 mt-md-0">
+                        <h2 class="fw-bold mb-3 fs-3 fs-md-2">Sambutan Kepala Sekolah</h2>
+                        <p class="fs-6 text-muted fst-italic mb-4 mx-auto mx-md-0" style="line-height: 1.6; max-width: 800px;">
                             "Assalamu'alaikum Warahmatullahi Wabarakatuh. Selamat datang di website resmi SD Negeri Kroyolor. Kami hadir dengan komitmen teguh untuk mewujudkan generasi yang beriman, bertaqwa, dan memiliki budi pekerti yang santun. Sebagai institusi pendidikan dasar, kami menyadari bahwa pondasi karakter anak bangsa dibentuk di sini. Mari bersama-sama bersinergi mendidik putra-putri kita menjadi generasi mandiri, peduli lingkungan, dan siap menyongsong masa depan gemilang."
                         </p>
-                        <div class="d-flex align-items-center justify-content-start mt-4 gap-3">
-                            <div class="text-start">
-                                <h5 class="fw-bold mb-1 text-dark">Imbuh Tri Purwani S.Pd.SD</h5>
-                                <p class="text-primary small fw-bold mb-0 text-uppercase tracking-wider">Kepala Sekolah SD Negeri Kroyolor</p>
-                            </div>
+                        <div class="mt-4">
+                            <h5 class="fw-bold mb-1 text-dark">Imbuh Tri Purwani S.Pd.SD</h5>
+                            <p class="text-primary small fw-bold mb-0 text-uppercase tracking-wider">Kepala Sekolah SD Negeri Kroyolor</p>
                         </div>
                     </div>
                 </div>

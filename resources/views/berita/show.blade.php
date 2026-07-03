@@ -10,9 +10,9 @@
             <p class="text-muted mb-4 small">Diposting pada: {{ date('d M Y', strtotime($berita->tanggal)) }} | Oleh: Admin</p>
             
             @if($berita->gambar)
-                <img src="{{ asset('storage/'.$berita->gambar) }}" class="img-fluid rounded mb-4 w-100" alt="{{ $berita->judul }}">
+                <img src="{{ asset('storage/'.$berita->gambar) }}" class="img-fluid rounded mb-4 w-100" alt="{{ $berita->judul }}" style="max-height: 450px; object-fit: cover;">
             @else
-                <img src="https://via.placeholder.com/800x450" class="img-fluid rounded mb-4 w-100" alt="Placeholder">
+                <img src="https://via.placeholder.com/800x450" class="img-fluid rounded mb-4 w-100" alt="Placeholder" style="max-height: 450px; object-fit: cover;">
             @endif
             
             <div class="article-content leading-relaxed" style="white-space: pre-line;">

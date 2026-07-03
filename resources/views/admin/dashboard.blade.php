@@ -29,7 +29,7 @@
                 <div class="card card-stat bg-warning p-4 shadow-sm">
                     <i class="bi bi-person-badge fs-1 mb-2"></i>
                     <h3>{{ $countSiswa }}</h3>
-                    <p class="mb-0">Peserta Didik</p>
+                    <p class="mb-0">Dokumentasi Siswa</p>
                 </div>
             </div>
         </div>

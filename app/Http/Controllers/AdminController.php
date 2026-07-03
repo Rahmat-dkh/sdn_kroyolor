@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\Staff;
-use App\Models\PesertaDidik;
+use App\Models\Dokumentasi;
 use App\Models\Kontak;
 
 class AdminController extends Controller
@@ -14,7 +14,7 @@ class AdminController extends Controller
     {
         $countBerita = Berita::count();
         $countStaff = Staff::count();
-        $countSiswa = PesertaDidik::count();
+        $countSiswa = Dokumentasi::count();
         $countPesan = Kontak::count();
         
         return view('admin.dashboard', compact('countBerita', 'countStaff', 'countSiswa', 'countPesan'));

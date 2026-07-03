@@ -16,9 +16,9 @@
             <i class="bi bi-people"></i>
             <span class="link-text">Guru & Staff</span>
         </a>
-        <a href="{{ route('peserta-didik.index') }}" class="sidebar-link {{ Request::is('admin/peserta-didik*') ? 'active' : '' }}">
+        <a href="{{ route('dokumentasi.index') }}" class="sidebar-link {{ Request::is('admin/dokumentasi*') ? 'active' : '' }}">
             <i class="bi bi-person-badge"></i>
-            <span class="link-text">Peserta Didik</span>
+            <span class="link-text">Dokumentasi Siswa</span>
         </a>
         <a href="{{ route('galeri.index') }}" class="sidebar-link {{ Request::is('admin/galeri*') ? 'active' : '' }}">
             <i class="bi bi-images"></i>

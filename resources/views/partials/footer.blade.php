@@ -3,9 +3,7 @@
         <div class="row g-4">
             <div class="col-lg-4 col-md-6">
                 <div class="d-flex align-items-center mb-3">
-                    <div class="footer-logo-circle me-3" style="width: 40px; height: 40px; background: var(--bs-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                        <i class="bi bi-mortarboard-fill text-white"></i>
-                    </div>
+                    <img src="{{ asset('images/logo-sekolah.png') }}" alt="Logo SDN Kroyolor" width="45" height="45" class="me-3" style="object-fit: contain;">
                     <h4 class="fw-bold mb-0">SD NEGERI KROYOLOR</h4>
                 </div>
                 <p class="text-white-50 small mb-4">Mewujudkan lingkungan pendidikan yang inovatif, berkarakter, dan berprestasi unggul di era digital. (NPSN: 20306457)</p>
@@ -29,7 +27,7 @@
                 <ul class="list-unstyled small opacity-75">
                     <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</li>
                     <li class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i> (0275) 1234567</li>
-                    <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnkroyolor@gmail.com</li>
+                    <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnegerikroyolor@yahoo.com</li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-6 text-lg-end">

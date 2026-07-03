@@ -4,7 +4,7 @@
             <div class="d-flex justify-content-between small fw-medium">
                 <div>
                     <span class="me-4"><i class="bi bi-telephone-fill me-2 text-primary"></i> (0275) 1234567</span>
-                    <span><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnkroyolor@gmail.com</span>
+                    <span><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnegerikroyolor@yahoo.com</span>
                 </div>
                 <div>
                     <span><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</span>
@@ -16,12 +16,9 @@
     <nav class="navbar navbar-expand-lg bg-white py-2 transition-all m-0" id="mainNavbar">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
-            <div class="brand-logo-circle me-3" style="background-color: var(--bs-primary) !important; color: #fff !important;">
-                <i class="bi bi-mortarboard-fill"></i>
-            </div>
+            <img src="{{ asset('images/logo-sekolah.png') }}" alt="Logo SDN Kroyolor" width="50" height="50" class="me-3" style="object-fit: contain;">
             <div class="brand-text">
                 <span class="d-block fw-bold fs-5 fs-md-4 text-primary line-height-1">SD NEGERI KROYOLOR</span>
-                <span class="d-block small text-muted opacity-75 fw-medium">NPSN: 20306457</span>
             </div>
         </a>
 
@@ -56,7 +53,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end shadow-lg border-0 animate slideIn" aria-labelledby="dropDir">
                         <li><a class="dropdown-item" href="{{ url('/direktori/guru-tendik') }}">Guru & Staff</a></li>
-                        <li><a class="dropdown-item" href="{{ url('/direktori/peserta-didik') }}">Peserta Didik</a></li>
+                        <li><a class="dropdown-item" href="{{ url('/direktori/dokumentasi') }}">Dokumentasi Siswa</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown custom-dropdown w-100-mobile">
@@ -177,6 +174,7 @@
             box-shadow: none !important;
             border: none;
             width: 100%;
+        }
         .w-100-mobile { width: 100% !important; }
         .brand-text span.fs-5 {
             font-size: 1.1rem !important;
