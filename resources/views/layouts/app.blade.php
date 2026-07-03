@@ -17,39 +17,48 @@
     <title>@yield('title', 'SDN Kroyolor') | SD Negeri Kroyolor Kemiri Purworejo</title>
 
     {{-- SEO Meta Tags --}}
-    <meta name="description" content="@yield('meta_description', 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah. NPSN: 20306457. Unggul, Berkarakter, Berprestasi.')">
-    <meta name="keywords" content="@yield('meta_keywords', 'SDN Kroyolor, SD Negeri Kroyolor, Sekolah Dasar Kemiri, Purworejo, SD Kroyolor, NPSN 20306457, sekolah dasar purworejo, pendidikan dasar jawa tengah')">
+    @php
+        $metaDesc = $__env->yieldContent('meta_description') ?: 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah. NPSN: 20306457. Unggul, Berkarakter, Berprestasi.';
+        $metaKeywords = $__env->yieldContent('meta_keywords') ?: 'SDN Kroyolor, SD Negeri Kroyolor, Sekolah Dasar Kemiri, Purworejo, SD Kroyolor, NPSN 20306457, sekolah dasar purworejo, pendidikan dasar jawa tengah';
+    @endphp
+    <meta name="description" content="{{ $metaDesc }}">
+    <meta name="keywords" content="{{ $metaKeywords }}">
     <meta name="author" content="SD Negeri Kroyolor">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="{{ url()->current() }}">
 
     {{-- Open Graph (Facebook, WhatsApp preview) --}}
+    @php
+        $ogTitle = trim($__env->yieldContent('og_title')) ?: 'SD Negeri Kroyolor - Unggul, Berkarakter, Berprestasi';
+        $ogImage = trim($__env->yieldContent('og_image')) ?: asset('images/hero.jpg');
+        $ogDesc  = trim($__env->yieldContent('meta_description')) ?: 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah.';
+    @endphp
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="SD Negeri Kroyolor">
-    <meta property="og:title" content="@yield('og_title', 'SD Negeri Kroyolor - Unggul, Berkarakter, Berprestasi')">
-    <meta property="og:description" content="@yield('meta_description', 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah.')">
-    <meta property="og:image" content="@yield('og_image', asset('images/hero.jpg'))">
+    <meta property="og:title" content="{{ $ogTitle }}">
+    <meta property="og:description" content="{{ $ogDesc }}">
+    <meta property="og:image" content="{{ $ogImage }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:locale" content="id_ID">
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('og_title', 'SD Negeri Kroyolor')">
-    <meta name="twitter:description" content="@yield('meta_description', 'Website Resmi SD Negeri Kroyolor - Sekolah Dasar unggulan di Kemiri, Purworejo.')">
-    <meta name="twitter:image" content="@yield('og_image', asset('images/hero.jpg'))">
+    <meta name="twitter:title" content="{{ $ogTitle }}">
+    <meta name="twitter:description" content="{{ $ogDesc }}">
+    <meta name="twitter:image" content="{{ $ogImage }}">
 
     {{-- Schema.org Structured Data --}}
     <script type="application/ld+json">
     {
-        "@context": "https://schema.org",
-        "@type": "ElementarySchool",
+        "@@context": "https://schema.org",
+        "@@type": "ElementarySchool",
         "name": "SD Negeri Kroyolor",
         "url": "{{ url('/') }}",
         "logo": "{{ asset('images/logo-sekolah.png') }}",
         "image": "{{ asset('images/hero.jpg') }}",
         "description": "Sekolah Dasar Negeri Kroyolor adalah sekolah unggulan di Kecamatan Kemiri, Kabupaten Purworejo, Jawa Tengah.",
         "address": {
-            "@type": "PostalAddress",
+            "@@type": "PostalAddress",
             "streetAddress": "Kroyolor, Desa Kroyo Lor",
             "addressLocality": "Kemiri",
             "addressRegion": "Purworejo",

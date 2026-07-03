@@ -206,10 +206,11 @@
     </section>
 
 
+    @php $heroImage = asset('images/hero.jpg'); @endphp
     <style>
         .hero-section {
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), 
-                        url('{{ asset('images/hero.jpg') }}');
+                        url('{{ $heroImage }}');
             background-size: cover;
             background-position: center;
             min-height: 55vh;
