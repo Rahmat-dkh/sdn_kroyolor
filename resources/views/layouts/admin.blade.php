@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     @php $activeTheme = \App\Models\Setting::get('theme', 'default'); @endphp
     <link rel="stylesheet" href="{{ asset('css/themes/' . $activeTheme . '.css') }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('images/logo-sekolah.png') }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('images/logo-sekolah.png') }}">
     <style>
         :root {
             --sidebar-width: 240px;
