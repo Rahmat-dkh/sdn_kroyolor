@@ -7,10 +7,9 @@
                     <h4 class="fw-bold mb-0">SD NEGERI KROYOLOR</h4>
                 </div>
                 <p class="text-white-50 small mb-4">Mewujudkan lingkungan pendidikan yang inovatif, berkarakter, dan berprestasi unggul di era digital. (NPSN: 20306457)</p>
-                <div class="social-links d-flex gap-2">
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-sm rounded-circle" style="width: 35px; height: 35px;"><i class="bi bi-youtube"></i></a>
+                <div class="social-links d-flex gap-3 mt-2">
+                    <a href="https://www.facebook.com/p/Sekolah-Negeri-Kroyolor-61554538890973/" target="_blank" title="Facebook SDN Kroyolor"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://www.youtube.com/@SDNKROYOLOROFFICIAL" target="_blank" title="YouTube SDN Kroyolor"><i class="bi bi-youtube fs-4"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
