@@ -3,7 +3,7 @@
         <div class="container">
             <div class="d-flex justify-content-between small fw-medium">
                 <div>
-                    <span class="me-4"><i class="bi bi-telephone-fill me-2 text-primary"></i> (0275) 1234567</span>
+
                     <span><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnegerikroyolor@yahoo.com</span>
                 </div>
                 <div>

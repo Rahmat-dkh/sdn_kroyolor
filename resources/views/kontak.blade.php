@@ -24,13 +24,7 @@
                         sdnkroyolor@gmail.com
                     </div>
                 </div>
-                <div class="d-flex mb-3">
-                    <div class="me-3 text-primary"><i class="bi bi-telephone-fill fs-4"></i></div>
-                    <div>
-                        <strong>Telepon:</strong><br>
-                        (0275) 1234567
-                    </div>
-                </div>
+
                 
                 <div class="mt-4">
                     <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">

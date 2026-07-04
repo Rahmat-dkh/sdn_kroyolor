@@ -68,7 +68,6 @@
             "addressRegion": "Purworejo",
             "addressCountry": "ID"
         },
-        "telephone": "(0275) 1234567",
         "email": "sdnegerikroyolor@yahoo.com"
     }
     </script>

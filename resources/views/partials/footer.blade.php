@@ -25,7 +25,7 @@
                 <h6 class="fw-bold mb-3">Kontak Kami</h6>
                 <ul class="list-unstyled small opacity-75">
                     <li class="mb-2"><i class="bi bi-geo-alt-fill me-2 text-primary"></i> Kroyolor, Desa Kroyo Lor, Kec. Kemiri, Purworejo</li>
-                    <li class="mb-2"><i class="bi bi-telephone-fill me-2 text-primary"></i> (0275) 1234567</li>
+
                     <li class="mb-2"><i class="bi bi-envelope-fill me-2 text-primary"></i> sdnegerikroyolor@yahoo.com</li>
                 </ul>
             </div>
