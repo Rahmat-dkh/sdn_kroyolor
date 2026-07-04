@@ -9,7 +9,7 @@
     <!-- Theme Specific CSS -->
     <link rel="stylesheet" href="{{ asset('css/themes/' . $activeTheme . '.css') }}">
     <style>
-        body { background-color: #f4f7f6; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        body { background-color: #f4f7f6; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
         .login-card { width: 100%; max-width: 400px; padding: 20px; border: none; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
     </style>
 </head>
