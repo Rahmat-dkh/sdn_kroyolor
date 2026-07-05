@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{ asset('css/themes/' . $activeTheme . '.css') }}">
     
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('images/logo-sekolah.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" type="image/png" href="{{ asset('images/logo-sekolah.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('images/logo-sekolah.png') }}">
     
     <title>@yield('title', 'SDN Kroyolor') - SD Negeri Kroyolor Kemiri Purworejo</title>
